@@ -44,8 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="task-content">{{itemID}}
-    </div>
+    <div class="task-content">{{ itemText }}</div>
     <div class="task-info">
       <span class="task-date">14 June 2022</span>
       <div class="bookmark">
@@ -60,7 +59,7 @@
 export default {
   name: "Task",
   props: {
-    itemID: Number,
+    itemText: String,
     taskState: String,
   },
   data() {

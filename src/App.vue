@@ -1,28 +1,14 @@
 <template>
   <div id="app">
-    <!-- <draggable class="flex">
-      <sections
-        v-for="(item, index) in sectionList"
-        :key="index"
-        :name="item.name"
-        :count="item.taskCount"
-      >
-      <div>aaa</div>
-      </sections>
-    </draggable> -->
-    <Sample />
-    <!-- <Task /> -->
+    <Sections />
   </div>
 </template>
 
 <script>
-/* import sections from "./components/Sections.vue";
-import Task from "./components/Task.vue";
-import draggable from "vuedraggable"; */
-import Sample from "./components/Sample.vue";
+import Sections from "./components/Sections.vue";
 export default {
   name: "App",
-  components: { Sample },
+  components: { Sections },
   data() {
     return {
       sectionList: [
@@ -44,9 +30,5 @@ export default {
   display: flex;
   font-family: "IBM Plex Sans", sans-serif;
   padding: 3rem;
-  .flex {
-    display: flex;
-    flex-direction: row;
-  }
 }
 </style>
